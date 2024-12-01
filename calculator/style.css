@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    font-family: montserrat;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100.0vh;
+    background: #ecf0f3;
+}
+
+.calculator{
+    width: 350px;
+    background: #ecf0f3;
+    border-radius: 20px;
+    box-shadow: 14px 14px 22px #cbced1,
+                -14px -14px 22px #cbced1;
+
+}
+
+/*input{
+    width: 320px;
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgbs(84, 84, 84, 0.1);
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    color: #000;
+}*/
+input{
+    height: 60px;
+  width: 300px;
+  margin-top: 40px;
+  border-radius: 1px;
+  border: 1px solid #e1e7ea;
+  color: black;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: right;
+  padding-right: 20px;
+  background: #ecf0f3;
+  box-shadow: inset 8px 8px 8px #cbced1,
+              inset -8px -8px 8px #ffffff;
+}
+input::placeholder{
+    color: #000;
+}
+
+button{
+    width: 58px;
+  height: 55px;
+  margin: 5px;
+  font-size: 22px;
+  line-height: 55px;
+  border-radius: 3px;
+  border: 2px solid #d9d9d9;
+  background: #ecf0f3;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+        -6px -6px 10px -1px rgba(255,255,255,0.7);
+    border: 1px solid rgba(0,0,0,0);
+    transition: transform 0.5s;
+}
+button:hover{
+    transition: .5s;
+  background: #cbced1;
+   box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.01);
+    transform: translateY(2px);
+}
+.equalBtn{
+    width: 275px;
+  margin: 10px 0 10px 0;
+  font-size: 30px;
+  color: white;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+        -6px -6px 10px -1px rgba(255,255,255,0.7);
+    border: 1px solid rgba(0,0,0,0);
+    transition: transform 0.5s;
+  background: #000;
+  border: 1px solid #000;
+}
+.equalBtn:hover{
+    background-color: #00acee;
+}
+
+.operator{
+    color: #0c0c0c;
+}
